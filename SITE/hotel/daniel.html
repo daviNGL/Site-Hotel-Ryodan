@@ -1,0 +1,74 @@
+ <body role="document">
+  
+	
+    <div class="container theme-showcase" role="main">      
+      <div class="page-header">
+        <h1>Estacionamento</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+         
+		 <form method="post" action="processa/cad_estacionamento.php">
+			 
+			Data de entrada:	
+			<input type="date"
+				   name="dataEnt"> <br>
+			Data de Saída:
+			<input type="date"
+					name="dataSai"> <br>
+			Fabricante:
+			<input type="text"
+					name="fabricante"
+					maxlength="50"
+					placeholder="Ex: Ford"> <br>
+			Modelo:
+			<input type="text"
+					name="modelo"
+					maxlength="50"
+					placeholder="EX: Focus"> <br>
+			Placa:
+			<input type="text"
+					name="placa"
+					maxlength="8"
+					placeholder="ABC-1234"> <br>
+			UF:
+			<input type="text"
+					name="uf"
+					maxlength="2"
+					placeholder="AA"> <br>
+			Hora de Entrada:
+			<input type="time"
+					name="horaEnt"> <br>
+			Hora de Saída:
+			<input type="time"
+					name="horaSai"> <br>
+			Valor Pago:
+			<input type="number"
+					name="valor"
+					step="any"
+					placeholder="R$"> <br>	
+			
+			Número da Vaga:
+			<input type="number"
+					name="vaga"
+					min="001"
+					max="999"
+					placeholder="1 á 999"> <br>
+					
+			Observações:<br>
+			<textarea name="obs"
+					  rows="3"
+					  cols="80"
+					  placeholder="Informe suas observações aqui."></textarea> <br><br>
+					
+			
+		
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+		
+			
+		</form>
+		 
+        </div>
+		</div>
+    </div> <!-- /container -->
+

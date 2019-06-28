@@ -1,0 +1,15 @@
+
+
+.foto-quarto{
+     float: left;
+     width: 40%;
+}
+
+.infos{
+    float: left;
+    width: 50%;
+}
+
+#cancela{
+    clear: both;
+}

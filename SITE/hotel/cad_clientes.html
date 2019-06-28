@@ -1,0 +1,101 @@
+﻿ <body role="document">
+  
+	
+    <div class="container theme-showcase" role="main">      
+      <div class="page-header">
+        <h1>Cadastro de Clientes</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+         
+		 <form method="post" action="processa/cad_clientes.php">
+			
+			<b>Nome Completo:</b> 
+			<input type="text"
+				   name="nome"
+				   maxlength="30" 
+				   class="form-control" 
+				   placeholder="Nome"required><br>
+			<b>CPF:</b>
+			<input type="number"
+				   name="cpf"
+				   min="1"
+				   class="form-control" 
+				   placeholder="CPF"required><br>
+			<b>RG:</b>
+			<input type="number"
+				   name="rg"
+				   min="1"
+				   class="form-control"
+				   placeholder="RG" required><br>
+			<b>Data de Nascimento:</b>
+			<input type="date"
+				   name="dataNasc" 
+				   class="form-control"
+				   placeholder="Data de Nascimento" required><br>
+			<b>Nacionalidade:</b>
+			<input type="text"
+				   name="nacionalidade"
+				   maxlength="20"
+				   class="form-control"
+				   placeholder="Nacionalidade"><br>
+			<b>E-mail:</b>
+			<input type="email"
+				   name="email"
+				   maxlength="50"
+				   class="form-control" 
+				   placeholder="E-mail" required><br>
+			<b>Telefone:</b>
+			<input type="number"
+				   name="ddd"
+				   min="1"
+				   class="form-control"
+				   placeholder="DDD"><br>
+				   
+			<input type="number"
+				   name="tel"
+				   min="1"
+				   class="form-control"required
+				   placeholder="Número"><br>
+				   
+			<b>Endereço:</b>
+			<input type="number"
+				   name="cep"
+				   min="1"
+				   class="form-control"
+				   placeholder="CEP"><br>	
+				
+			<input type="text"
+				   name="endereco"
+				   maxlength="40"
+				   class="form-control"
+				   placeholder="Endereço"><br>
+				   
+			<input type="text"
+				   name="complemento"
+				   maxlength="30"
+				   class="form-control"
+				   placeholder="Complemento"><br>
+				   
+			<b>Estado:</b>
+			<input type="text"
+				   name="uf"
+				   maxlength="2"
+				   placeholder="UF"
+				   class="form-control"><br>
+			<b>Cidade:</b>
+			<input type="text"
+				   name="cidade"
+				   maxlength="10"	
+				   class="form-control"
+				   placeholder="Cidade"><br>
+				   
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+				   
+				   
+		</form>
+		 
+        </div>
+		</div>
+    </div> <!-- /container -->
+

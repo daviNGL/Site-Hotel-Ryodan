@@ -1,0 +1,47 @@
+
+  
+	
+    <div class="container theme-showcase" role="main">      
+      <div class="page-header">
+        <h1>Cadastro de Nova Reserva</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+         
+		 <form method="post" action="processa/cad_reserva.php">
+
+			  <div class="form-group">
+				<label for="iCliente">Codigo do Cliente</label>
+				<input type="number" class="form-control" id="iCliente"  placeholder="Digite o codigo de identificação do cliente" name="nCliente" required>
+			  </div>
+			  
+			  <div class="form-group">
+				<label for="iQuarto">Codigo do Quarto</label>
+				<input type="number" class="form-control" id="iQuarto"  placeholder="Digite o codigo de identificação do quarto" name="nQuarto" required>
+			  </div>
+
+			  <div class="form-group">
+				<label for="iCheck-in">Check-in</label>
+				<input type="date" class="form-control" id="iCheck-in" name="nCheck-in" required>
+			  </div>
+
+			  <div class="form-group">
+				<label for="iCheck-out">Check-out</label>
+				<input type="date" class="form-control" id="iCheck-out" name="nCheck-out" disabled>
+			  </div>
+
+			  <div class="form-group">
+				<label for="iObs">Observações</label>
+				<textarea class="form-control" placeholder="Observações da reserva..." name="nObs" id="iObs"></textarea>
+			  </div>
+			   
+
+		
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+		
+			
+		</form>
+		 
+        </div>
+		</div>
+    </div> <!-- /container -->

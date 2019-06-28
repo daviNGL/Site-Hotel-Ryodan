@@ -1,0 +1,78 @@
+﻿ <body role="document">
+  
+	
+    <div class="container theme-showcase" role="main">      
+      <div class="page-header">
+        <h1>Estacionamento</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+         
+		 <form method="post" class="form-horizontal" action="processa/cad_estacionamento.php">
+		 
+		 
+		<div class="form-group">
+			<label for="dataEnt">Data de entrada:</label>
+			<input class="form-control" type="date" name="DataEntrada" id="dataEnt" required>
+		</div>
+			
+		<div class="form-group">	
+			<label for="dataSai">Data de Saída:</label>
+			<input class="form-control" type="date" name="DataSaida" id="dataSai">
+		</div>
+		
+		<div class="form-group">
+			<label for="fabricante">Fabricante:</label>
+			<input class="form-control" type="text" name="Fabricante" maxlength="50" placeholder="Ex: Ford" id="fabricante" required>
+		</div>			
+			
+		<div class="form-group">
+			<label for="modelo">Modelo:</label>
+			<input class="form-control" type="text" name="Modelo" maxlength="50" placeholder="EX: Focus" id="modelo" required>
+		</div>			
+				
+		<div class="form-group">		
+			<label for="placa">Placa:</label>
+			<input class="form-control" type="text" name="Placa" maxlength="8" placeholder="ABC-1234" id="placa" required>
+		</div>			
+		
+		<div class="form-group">
+			<label for="uf">UF:</label>
+			<input class="form-control" type="text" name="UF" maxlength="2" placeholder="AA" id="uf" required>
+		</div>			
+			
+		<div class="form-group">	
+			<label for="horaEnt">Hora de Entrada:</label>
+			<input class="form-control" type="time" name="HoraEntrada" id="horaEnt" required>
+		</div>			
+		
+		<div class="form-group">
+			<label for="horaSai">Hora de Saída:</label>
+			<input class="form-control" type="time" name="HoraSaida" id="horaSai">
+		</div>			
+			
+		<div class="form-group">	
+			<label for="valor">Valor Pago:</label>
+			<input class="form-control" type="number" name="Valor" step="any" placeholder="R$" id="valor">
+		</div>			
+			
+		<div class="form-group">	
+			<label for="vaga">Número da Vaga:</label>
+			<input class="form-control" type="number" name="NumeroVaga" min="001" max="999" placeholder="1 ~ 999" id="vaga" required>
+		</div>			
+				
+		<div class="form-group">			
+			<label for="obs">Observações:</label><br>
+			<textarea class="form-control" name="Obs" rows="3" cols="80" placeholder="Informe suas observações aqui." id="obs"></textarea>
+		</div>			
+			
+		
+			<button type="submit" class="btn btn-primary">Cadastrar</button>
+		
+			
+		</form>
+		 
+        </div>
+		</div>
+    </div> <!-- /container -->
+
